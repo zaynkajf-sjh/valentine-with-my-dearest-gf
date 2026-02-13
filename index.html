@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>A Special Surprise for My Girl</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-view">
+        <h2>Tic Tac Toe</h2>
+        <p class="subtitle">Menangkan game untuk kejutan!</p>
+        <div class="board">
+            <div class="cell" onclick="handleTap(0)"></div>
+            <div class="cell" onclick="handleTap(1)"></div>
+            <div class="cell" onclick="handleTap(2)"></div>
+            <div class="cell" onclick="handleTap(3)"></div>
+            <div class="cell" onclick="handleTap(4)"></div>
+            <div class="cell" onclick="handleTap(5)"></div>
+            <div class="cell" onclick="handleTap(6)"></div>
+            <div class="cell" onclick="handleTap(7)"></div>
+            <div class="cell" onclick="handleTap(8)"></div>
+        </div>
+        <div id="status-box">GILIRAN KAMU (X)</div>
+    </div>
+
+    <div id="prank-overlay">
+        <div class="spinner"></div>
+        <p style="font-weight: bold;">> CRITICAL_ERROR: SYSTEM_FAILURE</p>
+        <p id="p-text">> Formatting User Data...</p>
+    </div>
+
+    <div id="scrapbook-view">
+        <div class="book">
+            <div class="cover-wrapper" id="cover" onclick="handleBook()">
+                <div class="front">
+                    <div style="font-size: 3.5rem;">📔</div>
+                    <h3 style="font-family: 'Playfair Display'; margin: 15px 0;">Special For You</h3>
+                    <p style="font-size: 0.6rem; letter-spacing: 3px;">TAP TO OPEN</p>
+                </div>
+                <div class="back">
+                    <div class="photo-frame">
+                        <img src="sayang3.jpg" alt="Memory">
+                    </div>
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 1.2rem;">My favorite view is you.</p>
+                </div>
+            </div>
+            <div class="inside-page">
+                <h3 style="font-family: 'Playfair Display'; color: var(--primary); margin: 0;">Song of The Day</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rtOvBOTyX00?si=qsjdLnXqZuclCdjb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p style="font-size: 0.8rem; margin-top: 20px; color: #444; line-height: 1.6;">
+                    NGL this is my first time celebrating Valentine's Day with my beloved girlfriend. And, I'm thrilled to be celebrating this happy day with you. I will never get tired of reminding you that I love you, today, tomorrow, the day after tomorrow, forever and ever. 🩵 <br>
+                    <b>Happy Valentine's Day!</b>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
